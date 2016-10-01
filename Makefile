@@ -1,4 +1,8 @@
 .PHONY: push
 
 push:
-	scp index.html backslasher.net:./backslasher.net/index.html
+	cat file-list | xargs -I {} scp {} backslasher.net:./backslasher.net/{}
+
+pull:
+	cat file-list | xargs -I {} scp backslasher.net:./backslasher.net/{} {}
+
