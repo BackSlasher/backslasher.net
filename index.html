@@ -10,6 +10,10 @@ a{
   color:inherit;
 }
 
+#navigation p {
+  display:inline;
+}
+
 .centered {
     position: fixed;
     top: 50%;
@@ -28,10 +32,6 @@ a{
   color: #777;
 }
 
-#title {
-  font-size: 200%;
-    transform: translate(0,-50%);
-}
 </style>
   </head>
   <body>
@@ -40,12 +40,24 @@ a{
         \er
       </div>
       <div id="navigation">
-        <a href="http://blog.backslasher.net/pages/about.html"><i class="fa fa-info"></i></a> |
-        <a href="http://blog.backslasher.net"><i class="fa fa-file-text"></i></a> |
-        <a href="http://blog.backslasher.net/pages/projects.html"><i class="fa fa-briefcase"></i></a> |
-        <a href="https://github.com/BackSlasher"><i class="fa fa-github"></i></a> |
-        <a href="https://www.linkedin.com/in/nitzanraz"><i class="fa fa-linkedin"></i></a> |
-      <a href="http://stackexchange.com/users/917888/nitz"><i class="fa fa-stack-exchange"></i></a>
+        <p title="About">
+          <a href="http://blog.backslasher.net/pages/about.html"><i class="fa fa-info"></i></a>
+        </p> |
+        <p title="Blog">
+          <a href="http://blog.backslasher.net"><i class="fa fa-file-text"></i></a>
+        </p> |
+        <p title="Projects">
+          <a href="http://blog.backslasher.net/pages/projects.html"><i class="fa fa-briefcase"></i></a>
+        </p> |
+        <p title="GitHub">
+          <a href="https://github.com/BackSlasher"><i class="fa fa-github"></i></a>
+        </p> |
+        <p title="LinkedIn">
+          <a href="https://www.linkedin.com/in/nitzanraz"><i class="fa fa-linkedin"></i></a>
+        </p> |
+        <p title="Stack Exchange">
+          <a href="http://stackexchange.com/users/917888/nitz"><i class="fa fa-stack-exchange"></i></a>
+        </p>
       </div>
     </div>
   </body>
