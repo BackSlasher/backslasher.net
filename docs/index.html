@@ -28,6 +28,14 @@
     font-size: 300%;
 }
 
+.navigation {
+   padding-bottom: 0.5em;
+}
+
+.navigation > a:not(:last-of-type)::after {
+  content: "|";
+}
+
 #logo {
   font-size: 700%;
   color: #777;
@@ -52,35 +60,28 @@
    <div id="title">
       Escape Artist
    </div>
-   <div id="navigation">
-    <p title="Blog">
+   <hr/>
+   <div class="navigation">
      <a href="https://blog.backslasher.net">
-      <i class="fa fa-file-text">
-      </i>
+       Blog
      </a>
-    </p>
-    | 
-    <p title="Projects">
      <a href="https://blog.backslasher.net/projects">
-      <i class="fa fa-industry">
-      </i>
+       Projects
      </a>
-    </p>
-    |
+   </div>
+   <div class="navigation">
     <p title="GitHub">
      <a href="https://github.com/BackSlasher">
       <i class="fa fa-github">
       </i>
      </a>
     </p>
-    |
     <p title="LinkedIn">
      <a href="https://www.linkedin.com/in/nitzanraz">
       <i class="fa fa-linkedin">
       </i>
      </a>
     </p>
-    |
     <p title="Stack Exchange">
      <a href="https://stackexchange.com/users/917888/nitz">
       <i class="fa fa-stack-exchange">
