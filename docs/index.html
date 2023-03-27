@@ -32,7 +32,11 @@
    padding-bottom: 0.5em;
 }
 
-.navigation > a:not(:last-of-type)::after {
+.navigation a:not(:last-child)::after {
+  content: "|";
+}
+
+.navigation2 *:not(:last-child)::after {
   content: "|";
 }
 
@@ -62,6 +66,9 @@
    </div>
    <hr/>
    <div class="navigation">
+     <a href="https://blog.backslasher.net/about/">
+      About
+     </a>
      <a href="https://blog.backslasher.net">
        Blog
      </a>
@@ -69,7 +76,7 @@
        Projects
      </a>
    </div>
-   <div class="navigation">
+   <div class="navigation2">
     <p title="GitHub">
      <a href="https://github.com/BackSlasher">
       <i class="fa fa-github">
